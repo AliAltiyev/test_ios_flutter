@@ -42,7 +42,10 @@ class AppStyles {
   static LinearGradient glassGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [surfaceColor.withOpacity(0.9), surfaceColor.withOpacity(0.7)],
+    colors: [
+      surfaceColor.withValues(alpha: 0.9),
+      surfaceColor.withValues(alpha: 0.7),
+    ],
   );
 
   static TextStyle counterTextStyle = TextStyle(
@@ -53,7 +56,7 @@ class AppStyles {
     height: 1.0,
     shadows: [
       Shadow(
-        color: Colors.black.withOpacity(0.2),
+        color: Colors.black.withValues(alpha: 0.2),
         offset: const Offset(0, 2),
         blurRadius: 8,
       ),
@@ -63,7 +66,7 @@ class AppStyles {
   static TextStyle counterLabelStyle = TextStyle(
     fontSize: AppConstants.fontSizeSmall,
     fontWeight: FontWeight.w600,
-    color: Colors.white.withOpacity(0.85),
+    color: Colors.white.withValues(alpha: 0.85),
     letterSpacing: 1.2,
     height: 1.4,
   );
@@ -104,13 +107,13 @@ class AppStyles {
     borderRadius: BorderRadius.circular(AppConstants.borderRadiusLarge),
     boxShadow: [
       BoxShadow(
-        color: primaryColor.withOpacity(0.25),
+        color: primaryColor.withValues(alpha: 0.25),
         blurRadius: 20,
         offset: const Offset(0, 8),
         spreadRadius: 0,
       ),
       BoxShadow(
-        color: primaryDark.withOpacity(0.15),
+        color: primaryDark.withValues(alpha: 0.15),
         blurRadius: 40,
         offset: const Offset(0, 16),
         spreadRadius: -4,
@@ -124,13 +127,13 @@ class AppStyles {
     border: Border.all(color: borderColor, width: 1.5),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.04),
+        color: Colors.black.withValues(alpha: 0.04),
         blurRadius: 12,
         offset: const Offset(0, 4),
         spreadRadius: 0,
       ),
       BoxShadow(
-        color: Colors.black.withOpacity(0.02),
+        color: Colors.black.withValues(alpha: 0.02),
         blurRadius: 24,
         offset: const Offset(0, 8),
         spreadRadius: -2,
@@ -143,13 +146,13 @@ class AppStyles {
     borderRadius: BorderRadius.circular(AppConstants.borderRadiusSmall),
     boxShadow: [
       BoxShadow(
-        color: primaryColor.withOpacity(0.35),
+        color: primaryColor.withValues(alpha: 0.35),
         blurRadius: 16,
         offset: const Offset(0, 8),
         spreadRadius: -2,
       ),
       BoxShadow(
-        color: primaryDark.withOpacity(0.2),
+        color: primaryDark.withValues(alpha: 0.2),
         blurRadius: 32,
         offset: const Offset(0, 16),
         spreadRadius: -8,
@@ -160,10 +163,10 @@ class AppStyles {
   static BoxDecoration glassCardDecoration = BoxDecoration(
     gradient: glassGradient,
     borderRadius: BorderRadius.circular(AppConstants.borderRadiusLarge),
-    border: Border.all(color: Colors.white.withOpacity(0.3), width: 1),
+    border: Border.all(color: Colors.white.withValues(alpha: 0.3), width: 1),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withOpacity(0.06),
+        color: Colors.black.withValues(alpha: 0.06),
         blurRadius: 20,
         offset: const Offset(0, 8),
       ),
