@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(AppConstants.paddingDefault),
         child: BlocBuilder<FileBloc, FileState>(
-          builder: (context, state) {
+          builder: (_, state) {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
