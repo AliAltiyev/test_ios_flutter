@@ -18,7 +18,8 @@ class AppConstants {
 
   static const String errorUnknownWrite = 'Неизвестная ошибка записи';
   static const String errorUnknownRead = 'Неизвестная ошибка чтения';
-  static const String exceptionFormat = 'NativeChannelException(code: %code%, message: %message%)';
+  static const String exceptionFormat =
+      'NativeChannelException(code: %code%, message: %message%)';
   static const String emptyString = '';
 
   static const double paddingDefault = 16.0;
