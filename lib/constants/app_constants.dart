@@ -23,11 +23,20 @@ class AppConstants {
   static const String emptyString = '';
 
   static const double paddingDefault = 16.0;
+  static const double paddingLarge = 24.0;
+  static const double paddingSmall = 12.0;
   static const double spacingLarge = 32.0;
   static const double spacingMedium = 16.0;
-  static const double borderRadius = 8.0;
+  static const double spacingSmall = 8.0;
+  static const double borderRadius = 16.0;
+  static const double borderRadiusSmall = 12.0;
+  static const double borderRadiusLarge = 24.0;
+  static const double elevationDefault = 4.0;
+  static const double elevationLarge = 8.0;
 
-  static const double fontSizeLarge = 24.0;
+  static const double fontSizeLarge = 32.0;
   static const double fontSizeMedium = 18.0;
   static const double fontSizeDefault = 16.0;
+  static const double fontSizeSmall = 14.0;
+  static const double fontSizeExtraLarge = 48.0;
 }
