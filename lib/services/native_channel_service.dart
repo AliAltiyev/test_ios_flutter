@@ -18,7 +18,7 @@ class NativeChannelService {
     } on PlatformException catch (e) {
       throw NativeChannelException(
         code: e.code,
-        message: e.message ?? 'Неизвестная ошибка записи',
+        message: e.message ?? AppConstants.errorUnknownWrite,
         details: e.details,
       );
     }
@@ -33,7 +33,7 @@ class NativeChannelService {
     } on PlatformException catch (e) {
       throw NativeChannelException(
         code: e.code,
-        message: e.message ?? 'Неизвестная ошибка чтения',
+        message: e.message ?? AppConstants.errorUnknownRead,
         details: e.details,
       );
     }
@@ -52,5 +52,7 @@ class NativeChannelException implements Exception {
   });
 
   @override
-  String toString() => 'NativeChannelException(code: $code, message: $message)';
+  String toString() => AppConstants.exceptionFormat
+      .replaceAll('%code%', code)
+      .replaceAll('%message%', message);
 }

@@ -81,7 +81,7 @@ import UIKit
             let content = try fileService.readFile()
             result(content)
         } catch {
-            result("")
+            result(FileConstants.emptyString)
         }
     }
 }

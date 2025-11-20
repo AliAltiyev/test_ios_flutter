@@ -120,6 +120,6 @@ class HomePage extends StatelessWidget {
     } else if (state is FileError) {
       return state.errorMessage;
     }
-    return '';
+    return AppConstants.emptyString;
   }
 }

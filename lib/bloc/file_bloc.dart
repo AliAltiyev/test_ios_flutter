@@ -25,7 +25,7 @@ class FileBloc extends Bloc<FileEvent, FileState> {
       emit(
         FileError(
           counter: _getCurrentCounter(),
-          fileContent: '',
+          fileContent: AppConstants.emptyString,
           errorMessage: '${AppConstants.uiReadErrorPrefix} ${e.message}',
         ),
       );
@@ -33,7 +33,7 @@ class FileBloc extends Bloc<FileEvent, FileState> {
       emit(
         FileError(
           counter: _getCurrentCounter(),
-          fileContent: '',
+          fileContent: AppConstants.emptyString,
           errorMessage: '${AppConstants.uiReadErrorPrefix} $e',
         ),
       );
@@ -90,6 +90,6 @@ class FileBloc extends Bloc<FileEvent, FileState> {
         ? (state as FileLoading).fileContent
         : state is FileError
         ? (state as FileError).fileContent
-        : '';
+        : AppConstants.emptyString;
   }
 }

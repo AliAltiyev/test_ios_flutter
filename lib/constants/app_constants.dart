@@ -16,6 +16,11 @@ class AppConstants {
   static const String uiErrorPrefix = 'Ошибка:';
   static const String uiReadErrorPrefix = 'Ошибка чтения:';
 
+  static const String errorUnknownWrite = 'Неизвестная ошибка записи';
+  static const String errorUnknownRead = 'Неизвестная ошибка чтения';
+  static const String exceptionFormat = 'NativeChannelException(code: %code%, message: %message%)';
+  static const String emptyString = '';
+
   static const double paddingDefault = 16.0;
   static const double spacingLarge = 32.0;
   static const double spacingMedium = 16.0;
